@@ -1,0 +1,24 @@
+{
+  "name": "supplier-management-system-backend",
+  "version": "1.0.0",
+  "description": "Backend for a supplier management and supply chain application",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "node src/server.js",
+    "dev:frontend": "npm --prefix frontend run dev -- --host 0.0.0.0",
+    "build": "npm --prefix frontend run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.4"
+  }
+}
